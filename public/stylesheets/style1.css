@@ -1,0 +1,102 @@
+*{box-sizing: border-box;}
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#div1{
+ background-color: #64b5f6;
+ padding:30px;
+ font-family: Helvetica;
+ font-size:20px;
+}
+#div1 a{
+border-radius:4px;
+padding:20px;
+text-align:center;
+line-height: 25px;
+font-weight:bold;
+color:black;
+text-decoration:none;
+-webkit-transition-duration:0.4s;
+transition-duration:0.4s;
+}
+#div1 a:hover{
+background-color:#90caf9;
+color:white;
+}
+.clogo{
+position:relative;
+animation:animatetop 1.2s}
+@keyframes animatetop{
+from{top:-300px;opacity:0}
+to{top:0;opacity:1}}
+
+#formdiv1{
+margin: 200px;
+display:block;
+width:auto;
+text-align:center;
+}
+#inputforid1{
+margin:2px;
+outline: none;
+line-height: 20px;
+}
+#inputforid1:focus{
+border-radius:4px;
+border:2px solid #64b5f6;
+box-sizing: border-box;
+}
+#inputforpkey1{
+margin-right: 45px;
+outline: none;
+line-height: 20px;
+}
+#passkeylabel{
+}
+#inputforpkey1:focus{
+border-radius:4px;
+border:2px solid #64b5f6;
+box-sizing: border-box;
+}
+button {
+    background-color: white; /* Green */
+    border: 2px solid #64b5f6;
+    border-radius:4px;
+    color: black;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight:bold;
+    -webkit-transistion-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#LoginButton{
+margin:6px;
+}
+#LoginButton:hover{
+background-color:#64b5f6;
+color:white;
+}
+#SignupButton{
+margin:6px;
+}
+#SignupButton:hover{
+background-color:#64b5f6;
+color:white;
+
+}
+#inputforemail1{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	margin-right: 25px;
+	line-height: 20px;
+}
+#inputforgst{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	margin-right: 14px;
+	line-height: 20px;
+}
