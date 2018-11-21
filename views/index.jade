@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    #div1.clogo(align='center')
+      a(href='LoginPage1.html') Company Logo
+    #formdiv1
+      form#signupform(method='POST', action='/loginUser')
+        label(for='id') ID:
+        input#inputforid1(type='text', name='ID', required='')
+        br
+        label(for='Email') Email:
+        input#inputforemail1(type='Email', name='Email')
+        br
+        label(for='GST') GST:
+        input#inputforgst(type='text', name='GST')
+        br
+        label#passkeylabel(for='pky') PassKey:
+        input#inputforpkey1(type='password', name='Passkey', autocomplete='new-password')
+        br
+        button#SignupButton(type='submit', onclick='login()') Sign Up
+        button#LoginButton(type='button') Log In
+      script.
+        function login() {
+        var constraint1,constraint2,constraint3,constraint4 = true;
+        var id =document.getElementById("inputforid1");
+        var email = document.getElementById("inputforemail1");
+        var GST = document.getElementById("inputforgst");
+        var pk= document.getElementById("inputforpkey1");
+        if (id.value == "") {
+        id.style.border = "2px solid #ff1744";
+        id.style.borderRadius = "4px";
+        constraint1 = false;
+        }
+        if (email.value == "") {
+        email.style.border = "2px solid #ff1744";
+        email.style.borderRadius = "4px";
+        constraint2 = false;
+        }
+        if (GST.value == "") {
+        GST.style.border = "2px solid #ff1744";
+        GST.style.borderRadius = "4px";
+        constraint3 = false;
+        }
+        if (pk.value == "") {
+        pk.style.border = "2px solid #ff1744";
+        pk.style.borderRadius = "4px";
+        constraint4 = false;
+        console.log("Incomplete Form");
+        }
+        if(constraint1 && constraint2 && constraint3 && constraint4){
+        document.getElementById("signupform").action = "localhost:3000/loginUser";
+        }}
