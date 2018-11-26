@@ -3,11 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('/LoginPage1.html');
   res.render('index', {  });
 });
-
-var express = require("express");
+console.log("index.js");
 var app = express();
 var Parse = require('body-parser');
 app.use(Parse.json());
@@ -22,21 +20,16 @@ var userschema = new mongoose.Schema({
  GST: String,
  Passkey: String
 });
-
-var User = mongoose.model("User", userschema);
-app.get("/", (req,res) => {	
-  res.sendFile(__dirname + "/LoginPage1.html");
-});
-const userroute = express.Router();
-userroute.route('/loginUser').post(function(req, res){
-  var newuser = new User(req.body);
-  newuser.save()
-	.then(item => {
-		res.send("Data Saved");
+var user = mongoose.model("User", userschema);
+router.post('/loginUser', function(req,res, next) {
+	var newuser = new user(req.body);
+	newuser.save()
+	.then(item=>{
+		var json = req.params;
+       res.send(json);
 	})
-	.catch(err => {
-		res.status(400).send("Unable to save");
-	});
+	.catch(err=> {
+		res.status(400).send("Failure");
+	})
 });
-
 module.exports = router;
