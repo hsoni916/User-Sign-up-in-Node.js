@@ -23,7 +23,7 @@ block content
         br
         button#SignupButton(type='submit', onclick='login()') Sign Up
         button#LoginButton(type='button') Log In
-      script.
+       script.
         function login() {
         var constraint1,constraint2,constraint3,constraint4 = true;
         var id =document.getElementById("inputforid1");
@@ -53,4 +53,4 @@ block content
         }
         if(constraint1 && constraint2 && constraint3 && constraint4){
         document.getElementById("signupform").action = "localhost:3000/loginUser";
-        }}
+}}
