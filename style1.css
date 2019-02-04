@@ -1,0 +1,198 @@
+*{
+	padding:0;
+	background-color:whitesmoke;
+	-moz-transform:scale(1);
+	-webkit-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform: scale(1);
+	zoom:100%;
+}
+.left{
+	height:100%;
+	width:12%;
+}
+.border-right{
+	z-index: 5;
+	position: relative;
+	border-right: 0.5px solid rgba(128,128,128,0.5);
+}
+i{
+	z-index: 4;
+}
+/*#Profile-holder{
+	padding-bottom:50px;
+}
+.leftpane {
+	height:100%;
+	background-color: rgb(112, 112, 112);
+	float: left;
+	width: 18%;
+}
+.shrink{
+	width: 0%;
+	height: 100%;
+}
+.toprightpane {
+	height: 13%;
+	background-color: rgb(88, 31, 31);
+	float:right;
+	width: 98%;
+	margin:1%;
+	border-radius: 20px;
+}
+.rightpane {
+	height:100%;
+	float: right;
+	width:82%;
+	background-color: rgb(129, 128, 146);
+}
+.expand{
+	width:100%;
+}
+.img-circle{
+	margin:10% 0% 0% 5%;
+	border-radius: 50%;
+	width:40px;
+	height:40px;
+}
+.border-bt{
+    border-bottom: 0.5px solid rgba(46, 49, 49, 0.4);
+    border-radius: 800px;
+    margin-left: 20%;
+	margin-right:20%;
+	
+}
+.menu-style{
+	font-family: Raleway;
+	padding: 8px 0px 10px 0px;
+	background-color: rgb(112, 112, 112);
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+:any-link{
+	color:white;
+	text-decoration: none;
+}
+.menu-style:hover{
+	background-color: dimgrey;
+}
+.name{
+	font-family: Verdana;
+	color:azure;
+	font-size: 15px;
+	font-weight: 600;
+	position: absolute;
+	top:35px;
+	left:65px;
+}
+.prof-cont{
+	margin-bottom: 20%;
+}
+.Content-cont{
+	background-color: rgb(88, 31, 31);
+	margin: 1% 1% 0% 1%;
+	width:82%;
+	height:85%;
+}
+/*clickable classes
+.clickable { cursor:pointer; }*/
+/*icons formatting*/
+.material-icons.md-18 {
+	 font-size: 18px;
+}
+.material-icons.md-24 { 
+	font-size: 24px;
+}
+.material-icons.md-36 { 
+	font-size: 36px;
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+.material-icons.md-48 {
+	 font-size: 39px;
+}
+.home{
+	position:absolute;
+	margin-top:5px;
+	margin-bottom: 5px;
+	top:25%;
+	left:35%;
+	color: rgba(0, 0, 0, 0.54);
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out; 
+}
+.payments{
+	margin-top:5px;
+	margin-bottom: 5px;
+	position: absolute;
+	top:35%;
+	left:35%;
+	color:rgba(0, 0, 0, 0.54);
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out; 
+}
+.polls{
+	position: absolute;
+	top: 45%;
+	left:35%;
+	color:rgba(0, 0, 0, 0.54);
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out; 
+}
+.settings{
+	position: absolute;
+	top:55%;
+	left:35%;
+	color:rgba(0, 0, 0, 0.54);
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out; 
+}
+i:hover{
+	color:rgba(158, 158, 209,0.5) !important;
+	cursor: pointer;
+}
+.icon {
+	position: absolute;
+	top:65%;
+	left:33%;
+	width: 36px;
+	height: 36px;
+}
+.icon-account-login {
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out; 
+	fill:rgba(0, 0, 0, 0.54);
+}
+.icon-account-login:hover{
+	fill:rgba(158, 158, 209,0.5);
+	cursor: pointer;
+}
+.profile-holder{
+	position:absolute;
+	top: 1%;
+	left:29%;
+	border-radius: 50%;
+	width:55px;
+	height:55px;
+	margin: 5% 0% 20% 0%;
+}
+.profilename{
+	position: relative;
+	top:12%;
+	left:17%;
+	color: rgba(0, 0, 0, 0.6);
+	font-family: 'Dosis';
+	font-size: 20px;
+	font-weight: 600;
+}
+.profilename:hover{
+	color:rgba(0, 0, 0, 0.50);
+	cursor: pointer;
+}
+/*Menu-Items*/
