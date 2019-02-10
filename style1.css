@@ -1,24 +1,22 @@
 *{
 	padding:0;
+	margin: 0;
 	background-color:whitesmoke;
 	-moz-transform:scale(1);
 	-webkit-transform:scale(1);
 	-o-transform:scale(1);
 	-ms-transform:scale(1);
 	transform: scale(1);
-	zoom:100%;
 }
 .left{
 	height:100%;
 	width:12%;
+	float: left;
 }
 .border-right{
 	z-index: 5;
 	position: relative;
 	border-right: 0.5px solid rgba(128,128,128,0.5);
-}
-i{
-	z-index: 4;
 }
 /*#Profile-holder{
 	padding-bottom:50px;
@@ -102,6 +100,9 @@ i{
 /*clickable classes
 .clickable { cursor:pointer; }*/
 /*icons formatting*/
+.clickable{
+	cursor: pointer;
+}
 .material-icons.md-18 {
 	 font-size: 18px;
 }
@@ -121,17 +122,17 @@ i{
 	position:absolute;
 	margin-top:5px;
 	margin-bottom: 5px;
-	top:25%;
+	top:24%;
 	left:35%;
 	color: rgba(0, 0, 0, 0.54);
 	-webkit-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out; 
 }
 .payments{
+	position: absolute;
 	margin-top:5px;
 	margin-bottom: 5px;
-	position: absolute;
-	top:35%;
+	top:34%;
 	left:35%;
 	color:rgba(0, 0, 0, 0.54);
 	-webkit-transition: all 0.1s ease-in-out;
@@ -139,7 +140,7 @@ i{
 }
 .polls{
 	position: absolute;
-	top: 45%;
+	top: 44%;
 	left:35%;
 	color:rgba(0, 0, 0, 0.54);
 	-webkit-transition: all 0.1s ease-in-out;
@@ -147,7 +148,7 @@ i{
 }
 .settings{
 	position: absolute;
-	top:55%;
+	top:54%;
 	left:35%;
 	color:rgba(0, 0, 0, 0.54);
 	-webkit-transition: all 0.1s ease-in-out;
@@ -159,7 +160,7 @@ i:hover{
 }
 .icon {
 	position: absolute;
-	top:65%;
+	top:64%;
 	left:33%;
 	width: 36px;
 	height: 36px;
@@ -178,21 +179,74 @@ i:hover{
 	top: 1%;
 	left:29%;
 	border-radius: 50%;
-	width:55px;
-	height:55px;
+	width:50px;
+	height:50px;
 	margin: 5% 0% 20% 0%;
 }
 .profilename{
 	position: relative;
-	top:12%;
+	top:11%;
 	left:17%;
 	color: rgba(0, 0, 0, 0.6);
-	font-family: 'Dosis';
-	font-size: 20px;
-	font-weight: 600;
+	font-family: 'Lato';
+	font-size: 22px; 
 }
 .profilename:hover{
 	color:rgba(0, 0, 0, 0.50);
 	cursor: pointer;
+}
+.rdiv{
+	position: relative;
+	height:100%;
+	width:88%;
+	float:right;
+	background-color: aquamarine;
+}
+.banner{
+	height:10%;
+	width: 100%;
+	background-color:whitesmoke;
+}
+.head{
+	position: absolute;
+	top:16%;
+	left:5%;
+}
+#heading{
+	font-size: 30px;
+	font-family: 'Lato';
+}
+.list{
+	width:200px; 
+	position: relative;
+	float: right;
+	padding-top: 1.5%;
+	padding-right: 2%;	
+}
+.pricebuy{
+	position: relative;
+	float:left;
+	height: 35px;
+	width: 95px;
+	border-radius: 5px;
+	background-color: rgb(221, 221, 221);
+	-webkit-transition:  all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.pricesell{
+	position: relative;
+	float:right;
+	height: 35px;
+	width: 95px;
+	border-radius: 5px;
+	background-color: rgb(221, 221, 221);
+	-webkit-transition:  all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.pricebuy:hover{
+	background-color: rgb(31, 187, 31);
+}
+.pricesell:hover{
+	background-color: rgb(235, 8, 8);
 }
 /*Menu-Items*/
